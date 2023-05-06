@@ -106,7 +106,7 @@
       let containNov = document.querySelector("#maindivN");
 
 
-let x=new fetcher("./db/db.json", (err, data)=>{
+let x=new fetcher("./db.json", (err, data)=>{
   if(err) throw Error(err);
   let parsed = JSON.parse(data)
   let $this=parsed.books;
@@ -190,7 +190,7 @@ let x=new fetcher("./db/db.json", (err, data)=>{
      console.log(param)
      
 
-let x=new fetcher("./db/db.json", (err, data)=>{
+let x=new fetcher("./db.json", (err, data)=>{
   if(err) throw Error(err);
   let parsed = JSON.parse(data)
   let $this=parsed.books;
@@ -224,7 +224,7 @@ let x=new fetcher("./db/db.json", (err, data)=>{
 <p class="text-dark">
   ${abt}
 </p>
-  <button onclick="down(${index.id});" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
+  <a href="${index.file}"<button class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
 
   <a href="store.html"><button class="btn btn-dark text-white"><i class="fas fa-chevron-left"></i>&ThickSpace;Return</button></a>
 
