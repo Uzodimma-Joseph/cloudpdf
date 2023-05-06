@@ -1,32 +1,19 @@
 {
   "recent":{
     "01":{
-      "name":"book001",
+      "name":"The Holyghost Made Manifest",
       "category":"religion",
       "id":"cloud0001deb1"
-    },
- "02":{
- "name":"learn python",
-      "category":"inspiration",
-      "id":"cloud0002deb1"
     }
   },
   "books":{
     "01":{
-      "name":"book001",
-      "file":"books/0000/index/book001.pdf",
+      "name":"The Holyghost Made Manifest",
+      "file":"http://lyksoomu.com/1AuUg",
       "category":"religion",
-      "author":"anonymous",
+      "author":"John G. Lake",
       "id":"cloud0001deb1",
-      "about":"lorem ipsum dolor amit\n porem ipsum dolor amit\n lorem ipsum dolor amit porem\n ipsum dolor amit lorem ipsum dolor \namit porem ipsum dolor\n amit lorem ipsum dolor amit porem ipsum\ndolor amit\nlorem ipsum dolor amit\n porem ipsum dolor amit\n lorem ipsum dolor amit porem\n ipsum dolor amit lorem ipsum dolor \namit porem ipsum dolor\n amit lorem ipsum dolor amit porem ipsum\ndolor amit"
-    },
-    "02":{
- "name":"learn python",
-      "file":"books/0000/index/Learning_Python.pdf",
-      "category":"religion",
-      "author":"anonymous",
-      "id":"cloud0002deb1",
-      "about":"lorem ipsum dolor amit\n porem ipsum dolor amit\n lorem ipsum dolor amit porem\n ipsum dolor amit lorem ipsum dolor \namit porem ipsum dolor\n amit lorem ipsum dolor amit porem ipsum\ndolor amit\nlorem ipsum dolor amit\n porem ipsum dolor amit\n lorem ipsum dolor amit porem\n ipsum dolor amit lorem ipsum dolor \namit porem ipsum dolor\n amit lorem ipsum dolor amit porem ipsum\ndolor amit"
+      "about":"this book is a soul inspiring devotional\n, which will aid in your \nspiritual growth and walk\n with God...\n download and read and \n be blessed"
     }
   }
 }
