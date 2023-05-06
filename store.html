@@ -169,7 +169,7 @@
       let containNov = document.querySelector("#maindivN");
 
 
-let x=new fetcher("./db/db.json", (err, data)=>{
+let x=new fetcher("./db.json", (err, data)=>{
   if(err) throw Error(err);
   let parsed = JSON.parse(data)
   let $this=parsed.books;
@@ -249,7 +249,7 @@ function search(){
     console.log($key)
     //fetch the db
 
-let x=new fetcher("./db/db.json", (err, data)=>{
+let x=new fetcher("./db.json", (err, data)=>{
   if(err) throw Error(err);
   let parsed = JSON.parse(data)
   let $this=parsed.books;
