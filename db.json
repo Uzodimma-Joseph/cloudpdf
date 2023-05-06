@@ -4,7 +4,12 @@
       "name":"The Holyghost\n Made Manifest",
       "category":"religion",
       "id":"cloud0001deb1"
-    }
+    },
+"02":{
+"name":"serpent \n and spirit of life",
+      "category":"religion",
+      "id":"cloud0001deb1"
+}    
   },
   "books":{
     "01":{
@@ -14,6 +19,14 @@
       "author":"John G. Lake",
       "id":"cloud0001deb1",
       "about":"this book is a soul inspiring devotional\n, which will aid in your \nspiritual growth and walk\n with God...\n download and read and \n be blessed"
+    },
+"02":{
+      "name":"serpent \n and spirit of life",
+      "file":"http://j.gs/24600115/cloudpdfwps",
+      "category":"religion",
+      "author":"anonymous",
+      "id":"cloud0001deb1",
+      "about":"this book contains clues \n on relationship bewteen the\n serpent and the spirit of \n life \n note, this book is not meant \n to contradict any \n religion"
     }
   }
 }
