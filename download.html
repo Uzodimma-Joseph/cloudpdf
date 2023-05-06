@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css"/>
+  <link rel="stylesheet" href="fontawesome/css/all.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+  <script src="js/index.js"></script>
+  <script src="js/brixx.js"></script>
+  
+  <title>download</title>
+</head>
+<body>
+	<div class="container-fluid pl-0 pr-0 text-justify bg-primary text-white" id="head" style="height:fit-content">
+	  <br/>
+	<div class="container pt-1 pb-2 text-center text-white" id="headtxt">
+	  
+	  <h1 class="text-white">CLOUD PDF</h1>
+	  <br/>
+	  <a href="https://t.me/cloudpdfchannel"><button class="btn btn-dark text-white pt-2 pb-2 pl-2 pr-2" style="font-family:Arial"><i class="fab fa-telegram"></i>&ThickSpace;Visit Our Telegram Channel</button></a>
+	</div>
+	<br/>
+	
+	  <br/>
+	  <br/>
+	  
+	</div>
+	
+	
+	
+<div class="container-fluid pl-0 pr-0 text-justify text-white" id="main">
+  <br/>
+
+
+</div>
+	
+	
+	<footer class="container-fluid text-dark bg-dark pt-3 pb-3 pl-3 pr-3">
+	  
+	  
+<div class="container pt-3 pb-2 text-center text-white" id="headtxt">
+	  
+	  <h1 class="text-white">CLOUD PDF</h1>
+	  <h4 class="text-white">A sure Plug for your pdf books</h4>
+	  <p class="text-white">
+	    lorem ipsum dolor amit porem ipsum dolor amit
+	    lorem ipsum dolor amit porem ipsum dolor amit
+	    lorem ipsum dolor amit porem ipsum dolor amit
+	    lorem ipsum dolor amit porem ipsum dolor amit
+	  </p>
+	  <br/>
+<a href="https://t.me/cloudpdfchannel"><button class="btn btn-primary text-white pt-2 pb-2 pl-2 pr-2"><i class="fab fa-telegram"></i>&ThickSpace;View Our Telegram Channel</button></a>
+	</div>
+	</footer>
+	
+	
+	
+	 <header class="container-fluid text-dark pt-4 pb-2 pr-5 bg-primary">
+   
+    <!--
+    <nav class="container text-warning" id="nav1">
+      <a href="index.html" class="pr-2 text-warning">Home</a>
+      <a href="" class="pr-2 text-warning">Blog</a>
+      <a href="about.html" class="text-warning">About</a>
+      
+    </nav>-->
+  <i class="fas fa-bars" onclick="pop();"></i>
+    
+    <div class="container-fluid text-center text-dark bg-primary" id="menu">
+     <br/>
+    <a href="index.html" class="text-white">Home</a>
+      <a href="store.html" class="text-white">Store</a>
+      <a href="" class="text-white">Blog</a>
+      <a href="https://t.me/08107411921" class="text-white">Review</a>
+    </div>
+ <button class="btn btn-success" disabled id="btn">CLOUD PDF</button>
+  </header>
+	  
+
+	
+	
+	
+	<script type="text/javascript">
+    let el=document.querySelector("#menu");
+    var x="true";
+    function pop(){
+      if(x=="true"){
+     //   console.log(x)
+        x="false";
+        el.style.display="block";
+       // console.log(x)
+      }else if(x=="false"){
+        x="true";
+        el.style.display="none";
+      }
+    }
+    </script>
+   
+    <script type="text/javascript">
+    /*function books(){
+      
+      let containRel = document.querySelector("#maindivR");
+      let containInsp = document.querySelector("#maindivI");
+      let containNov = document.querySelector("#maindivN");
+
+
+let x=new fetcher("./db/db.json", (err, data)=>{
+  if(err) throw Error(err);
+  let parsed = JSON.parse(data)
+  let $this=parsed.books;
+  let obj=Object.keys($this);
+  console.log(obj)
+  
+  obj.forEach(i=>{
+  let index=$this[i];  
+  console.log(index)
+  if(index.category === "religion"){
+    console.log(true)
+    containRel.style.display="block";
+    containRel.insertAdjacentHTML("beforeend", `
+  
+<div class="container pl-0 pr-0 text-center bg-primary text-white">
+  
+<img class="img-responsive" src="books/0000/cache/${index.id}.png"/><br/>
+<p class="text-white">
+  ${index.name}
+</p>
+  <button onclick="down(${index.id});" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
+
+  
+</div>
+    `)
+  }else if(index.category === "inspiration"){
+    console.log(true)
+    containInsp.style.display="block"
+    containInsp.insertAdjacentHTML("beforeend", `
+  
+<div class="container pl-0 pr-0 text-center bg-primary text-white">
+  
+<img class="img-responsive" src="books/0000/cache/${index.id}.png"/><br/>
+<p class="text-white">
+  ${index.name}
+</p>
+  <button onclick="down(${index.id});" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
+
+
+  
+</div>
+    `)
+  }else if(index.category === "novel"){
+    console.log(true)
+    containNov.style.display="block"
+    containNov.insertAdjacentHTML("beforeend", `
+  
+<div class="container pl-0 pr-0 text-center bg-primary text-white">
+  
+<img class="img-responsive" src="books/0000/cache/${index.id}.png"/><br/>
+<p class="text-white">
+  ${index.name}
+</p>
+  <button onclick="down(${index.id});" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
+
+  
+</div>
+    `)
+  }
+  
+  })
+  //document.write(parsed.name)
+})
+      
+    
+    }
+    books()
+   
+   */
+   
+   function down(param){
+     let data = param;
+     let sess = localStorage.setItem("cloudsessdownload", data);
+     
+     location.href="download.html"
+   }
+   
+   function fetch(){
+     let param = localStorage.getItem("cloudsessdownload");
+     
+     console.log(param)
+     
+
+let x=new fetcher("./db/db.json", (err, data)=>{
+  if(err) throw Error(err);
+  let parsed = JSON.parse(data)
+  let $this=parsed.books;
+  let obj=Object.keys($this);
+  console.log(obj)
+  
+  obj.forEach(i=>{
+  let index=$this[i];  
+  console.log(index)
+  
+  if(index.id === param){
+    document.querySelector("title").innerText = "download"+" "+index.name;
+ 
+ let abt=index.about;
+    abt=abt.replace(/\n/gim, "<br/>");
+    
+    document.querySelector("#main").innerHTML = `
+    
+
+<div class="container pl-0 pr-0 pt-4 pb-3 text-center text-white" id="dpdf">
+  
+<img class="img-responsive" src="books/0000/cache/${index.id}.png"/><br/>
+<br/>
+<h2 class="text-dark">
+  ${index.name}
+</h2>
+<p class="text-dark">
+ Author: ${index.author}
+</p>
+<br/>
+<p class="text-dark">
+  ${abt}
+</p>
+  <button onclick="down(${index.id});" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
+
+  <a href="store.html"><button class="btn btn-dark text-white"><i class="fas fa-chevron-left"></i>&ThickSpace;Return</button></a>
+
+  
+</div>
+
+    `
+    
+  }
+  
+  })
+  
+})
+     
+   }
+   fetch()
+   
+  </script>
+</body>
+</html>
