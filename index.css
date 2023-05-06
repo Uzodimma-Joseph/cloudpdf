@@ -1,0 +1,223 @@
+body{
+  background: rgb(210,210,255);
+}
+@font-face{
+  font-family: dp;
+  src: url("DEADLY POISON II.otf")
+}
+@font-face{
+  font-family: sg;
+  src: url("Spooky Grave.ttf")
+}
+@font-face{
+  font-family: nr;
+  src: url("Night Rumble.ttf")
+}
+#head{
+  height: 400px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgb(55,100,255);
+}
+#btn{
+  font-family: sg;
+  color: black;
+  font-size: 13px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  background: transparent;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 3l4px white;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgb(255, 230, 230);
+}
+#menu{
+  display: none;
+position: absolute;
+right: 0px;
+left: 0px;
+top: 100px;
+height: 300px;
+}
+#menu>a{
+  display: block;
+  width: 100%;
+  font-family: dp;
+  background: rgb(44,44,55);
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  height: 40px;
+  text-decoration: none;
+  padding: 8px;
+}
+header>i{
+  font-size: 30px;
+  float: right;
+  margin-right: 10px;
+}
+#headtxt{
+  /*filter: blur(2px);*/
+  animation-name: float;
+  animation-duration: 2s;
+}
+#headtxt>h1{
+  font-family: nr;
+  font-weight: bold;
+  color: rgb(44,44,55);
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+#headtxt>h4{
+font-family: Times New Roman;
+  font-weight: bold;
+  color: rgb(44,44,55);
+  font-size: 30px;
+  font-stretch: 5px;
+}
+#head>#headtxt>input{
+  height: 40px;
+  width: 250px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid rgb(44,44,55);
+  border-radius: 3px;
+  font-family: Arial;
+  background: rgb(210,220,255);
+}
+#head>#headtxt>a>button{
+  font-family: nr;
+  padding: 5px;
+}
+#reslt{
+  width: 100%;
+  height: 400px;
+  background: rgb(200,220,255);
+  display: none;
+  top: 100px;
+  margin: auto;
+  border-radius: 5px;
+}
+#main{
+  width: 100%;
+  background: rgb(200,220,255);
+}
+#main>h1{
+  font-family: nr;
+  font-size: 15px;
+}
+#main>div{
+ height: 300px;
+  width: 100%;
+  display: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#reslt>div{
+  height: 300px; 
+  width: 100%;
+  position: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#main>div>div{
+height: 250px;
+  width: 150px;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 0px;
+  font-family: Times New Roman;
+} 
+#reslt>div>div{
+  height: 250px;
+  width: 150px;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 0px;
+  font-family: Times New Roman;
+}
+#main>div>div>img{
+ height: 60%;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+  #reslt>div>div>img{
+  height: 60%;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#main>div>h1{
+  transform: rotate(90deg);
+  width: 70px;
+  position: relative;
+  top: -50%;
+  left: 0px;
+  display: inline-block;
+  font-family: nr;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+#main>#dpdf{
+  height: fit-content;
+  width: 100%;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 0px;
+  font-family: Times New Roman;
+}
+#main>#dpdf>img{
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#main>#dpdf>h2{
+  font-family: nr;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+footer{
+  height: 500px;
+  width: 100%;
+  opacity: 0.9;
+}
+footer>#headtxt>a>i{
+  font-size: 25px;
+  margin-right: 5px;
+}
+footer>#headtxt>h1{
+  border: 2px solid transparent;
+  border-bottom: 2px solid dodgerblue;
+}
+footer>#headtxt>h4{
+  font-family: dp;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+footer>#headtxt>p{
+  font-family: Times New Roman;
+  font-size: 15px;
+}
+@media only screen and (min-width:510px){
+  header{
+    background: rgb(210, 220,255);
+  }
+}
