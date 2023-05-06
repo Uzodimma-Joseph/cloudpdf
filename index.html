@@ -183,6 +183,8 @@ let x=new fetcher("./db.json", (err, data)=>{
   obj.forEach(i=>{
   let index=$this[i];  
   console.log(index)
+let n=index.name;
+n=n.replace("\n", "<br/>");
   if(index.category === "religion"){
     console.log(true)
     containRel.style.display="block";
@@ -192,7 +194,7 @@ let x=new fetcher("./db.json", (err, data)=>{
   
 <img class="img-responsive" src="${index.id}.png"/><br/>
 <p class="text-white">
-  ${index.name}
+  ${n}
 </p>
   <button onclick="down('${index.id}');" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
 
@@ -208,7 +210,7 @@ let x=new fetcher("./db.json", (err, data)=>{
   
 <img class="img-responsive" src="${index.id}.png"/><br/>
 <p class="text-white">
-  ${index.name}
+  ${n}
 </p>
   <button onclick="down('${index.id}');" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
 
@@ -225,7 +227,7 @@ let x=new fetcher("./db.json", (err, data)=>{
   
 <img class="img-responsive" src="${index.id}.png"/><br/>
 <p class="text-white">
-  ${index.name}
+  ${n}
 </p>
  <button onclick="down('${index.id}');" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
 
@@ -261,6 +263,8 @@ let x=new fetcher("./db.json", (err, data)=>{
   
   obj.forEach(i=>{
   let index=$this[i];  
+let n=index.name;
+n=n.replace("\n", "<br/>");
   let searchIndex = index.name;
   console.log(searchIndex.indexOf($key)+" "+searchIndex)
   if(searchIndex.indexOf($key)>-1){
@@ -274,7 +278,7 @@ let x=new fetcher("./db.json", (err, data)=>{
   
 <img class="img-responsive" src="${index.id}.png"/><br/>
 <p class="text-white">
-  ${index.name}
+  ${n}
 </p>
   <button onclick="down('${index.id}');" class="btn btn-dark text-white"><i class="fas fa-download"></i>&ThickSpace;Download</button>
 
