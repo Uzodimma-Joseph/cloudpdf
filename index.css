@@ -118,7 +118,7 @@ font-family: Times New Roman;
   font-size: 15px;
 }
 #main>div{
- height: 300px;
+ height: 350px;
   width: 100%;
   display: none;
   overflow-x: auto;
@@ -126,7 +126,7 @@ font-family: Times New Roman;
   white-space: nowrap;
 }
 #reslt>div{
-  height: 300px; 
+  height: 350px; 
   width: 100%;
   position: block;
   overflow-x: auto;
